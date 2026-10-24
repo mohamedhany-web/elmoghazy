@@ -1,0 +1,12 @@
+---
+description: تخزين الملفات على Cloudflare R2
+alwaysApply: true
+---
+
+# التخزين
+
+- الصور والفيديو والمرفقات تُحفظ فقط عبر `App\Services\Storage\MediaStore`. لا استدعاء مباشر لـ `Storage` من المتحكمات.
+- القرص هو `config('media.disk')` وافتراضه `r2`. المفاتيح في `.env`: `R2_ACCESS_KEY_ID` و `R2_SECRET_ACCESS_KEY` و `R2_BUCKET` و `R2_ENDPOINT`.
+- الدلو خاص. لا `Storage::url` ولا رابط عام ثابت. فيديو الطالب يتشغّل من مسار المنصة بعد التفعيل، والرد لا يحتوي رابط التخزين.
+- نوع التخزين من `config('media.purposes')`. موديول جديد يضيف الغرض هناك قبل الحفظ.
+- الرد لا يرجّع `key` ولا اسم القرص.

@@ -1,0 +1,108 @@
+.cs-mint-sheet__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.cs-mint-print {
+  color: #142232;
+  background: #fff;
+}
+
+.cs-mint-print__head {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #142232;
+}
+
+.cs-mint-print__head h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.cs-mint-print__head p {
+  margin: 4px 0 0;
+  color: #5b6b7c;
+  font-size: 0.92rem;
+}
+
+.cs-mint-print__line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 0 0 14px;
+  padding: 0;
+  list-style: none;
+  color: #142232;
+  font-size: 0.92rem;
+}
+
+.cs-mint-print__line li strong {
+  font-weight: 700;
+}
+
+.cs-mint-table-wrap {
+  overflow: auto;
+}
+
+.cs-mint-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "IBM Plex Sans Arabic", Oxygen, "Helvetica Neue", Arial, sans-serif;
+}
+
+.cs-mint-table th,
+.cs-mint-table td {
+  border: 1px solid #b7c4d0;
+  padding: 8px 10px;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.cs-mint-table thead th {
+  background: #142232;
+  color: #fff;
+  font-weight: 700;
+}
+
+.cs-mint-table tbody tr:nth-child(even) {
+  background: #f5f8fa;
+}
+
+.cs-mint-table .cs-mint-num {
+  width: 48px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.cs-mint-table .cs-mint-code {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  direction: ltr;
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  white-space: nowrap;
+}
+
+.cs-mint-table .cs-mint-status {
+  white-space: nowrap;
+}
+
+.cs-mint-print__note {
+  margin: 12px 0 0;
+  color: #5b6b7c;
+  font-size: 0.84rem;
+}
+
+#batch-list tr.is-on {
+  background: #e8f3f8;
+}
+
+#batch-list tr.is-on td {
+  font-weight: 600;
+}

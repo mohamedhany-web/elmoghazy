@@ -1,0 +1,13 @@
+---
+description: مكدس منصة المغازي وحدود المنتج
+alwaysApply: true
+---
+
+# المكدس
+
+- Laravel و Blade و CSS و JavaScript عادي. ممنوع Node و React و Tailwind و Vite و `node_modules`.
+- التشغيل المحلي: `php artisan serve` على `http://127.0.0.1:8000` فقط. لا تحويل إلى منفذ 3000.
+- الواجهة عربية واتجاهها RTL.
+- `docs/business-model.md` هو معيار القبول. لا تضف بوابة دفع أو محفظة أو فواتير أو تحصيلاً عن المدرس.
+- الأدمن هو المدرس: `users.role = teacher`. الطالب `student`. ولي الأمر ليس حساب مستخدم.
+- منطق الوصول والأكواد يعيش في `app/Services`. المتحكم يتحقق من الإدخال ويستدعي الخدمة فقط.

@@ -1,0 +1,13 @@
+---
+description: عزل موديولات المنصة
+alwaysApply: true
+---
+
+# العزل
+
+- الأدمن في `app/Http/Controllers/Admin` و `resources/views/admin` و `public/js/admin` و `public/css/admin` و `routes/api/admin.php`.
+- الطالب في `app/Http/Controllers/Student` و `resources/views/student` و `public/js/student` و `routes/api/student.php`.
+- ولي الأمر في `app/Http/Controllers/Parent` و `resources/views/parent` و `public/js/parent`.
+- الموقع العام في `app/Http/Controllers/Site` و `resources/views/site`.
+- المتحكم لا يستدعي متحكم موديول آخر. المشترك هو `app/Models` و `app/Services` فقط.
+- أنماط شاشة القراءة في `public/css/reading.css` للطالب وولي الأمر فقط. الأدمن لا يحمّلها، والطالب لا يحمّل ملفات الأدمن.
